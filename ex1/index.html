@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div class="content">
+		<h3 class="header">My todo list</h3>
+		
+		<!-- form chỗ này dùng để làm gì
+		mình nghĩ nên dùng div là ok. Bạn trả lời được thì ok thôi :) -->
+		<div>
+			<table id="todoTask">
+			</table>
+		</div>
+		
+		<!-- Muốn khi nhập text vào input rồi ấn phím enter mà ăn luôn sự kiện khi click vào button thì dùng form như ở dưới
+			 Bạn tự chỉnh sửa lại
+		<form class="fotter">
+			<input />
+			<button>...</button>
+		</form> -->
+		<form class="footer" id="addTodoForm">
+			<input type="text" id="txtAdd" name="txtAdd"/>
+			<button type="submit" id="btnAdd">Add</button>
+		</form>
+	</div>
+
+	<script src="jquery-2.2.4.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

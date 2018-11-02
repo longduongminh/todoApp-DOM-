@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+        $(document).ready(function () {
+            $.ajax({    
+                url: 'https://pgjstraining.herokuapp.com/api/todos/',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    console.log(Object.keys(data)[0]);
+                },
+                error: function () {  
+                    console.log('Error!');  
+                }
+            });
+
+            //  $.ajax({    
+            //     url: 'https://pgjstraining.herokuapp.com/api/todos/-LPZk7wW5ux0QsWExMEt',
+            //     method: 'DELETE',
+            //     dataType: 'json',
+            //     success: function(data) {
+            //         console.log(data);
+            //     },
+            //     error: function () {  
+            //         console.log('Error!');  
+            //     }
+            // });
+            
+            // $.ajax({    
+            //     url: 'https://pgjstraining.herokuapp.com/api/todos/',
+            //     method: 'POST',
+            //     dataType: 'json',
+            //     data: {
+            //         text: 'Nguyen Van A'
+            //     },
+            //     success: function(data) {
+            //         console.log(data);
+            //     },
+            //     error: function () {  
+            //         console.log('Error!');  
+            //     }
+            // });
+        });
+    </script>
+</body>
+</html>
